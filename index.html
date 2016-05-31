@@ -57,7 +57,8 @@
 <h2>
 <a id="binary-release" class="anchor" href="#binary-release" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Binary Release</h2>
 
-<p>Please vist the [Binary at GitHub].(<a href="https://github.com/BRICK-tool/BRICK_binary">https://github.com/BRICK-tool/BRICK_binary</a>).</p>
+<p>Please vist the [Binary at GitHub].(<a href="https://github.com/BRICK-tool/BRICK_binary">https://github.com/BRICK-tool/BRICK_binary</a>).
+Use <code>./Build_BRICK.sh</code> before using the binary.</p>
 
 <h2>
 <a id="source-code-and-build-instructions" class="anchor" href="#source-code-and-build-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Source Code and Build Instructions</h2>
@@ -67,8 +68,7 @@
 <h3>
 <a id="install-g-49" class="anchor" href="#install-g-49" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install g++-4.9</h3>
 
-<p>{% highlight bash %}
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y    
+<pre><code>sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y    
 sudo add-apt-repository ppa:dns/gnu -y     
 sudo update-alternatives --remove-all gcc    
 sudo update-alternatives --remove-all g++    
@@ -76,7 +76,7 @@ sudo apt-get update
 sudo apt-get install -qq g++-4.9     
 sudo apt-get upgrade    
 sudo apt-get dist-upgrade -y    
-{% endhighlight %}</p>
+</code></pre>
 
 <h3>
 <a id="download-llvm-and-clang" class="anchor" href="#download-llvm-and-clang" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download LLVM and Clang</h3>
@@ -84,22 +84,20 @@ sudo apt-get dist-upgrade -y
 <h3>
 <a id="build-and-install-llvm-and-clang" class="anchor" href="#build-and-install-llvm-and-clang" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build and Install LLVM and Clang</h3>
 
-<p>{% highlight bash %}
-cd llvm    
+<pre><code>cd llvm    
 ./configuration     
 make     
 sudo make install    
-{% endhighlight %}</p>
+</code></pre>
 
 <h3>
 <a id="download-and-build-brick" class="anchor" href="#download-and-build-brick" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download and build BRICK</h3>
 
-<p>{% highlight bash %}
-cd llvm/lib/Transforms    
+<pre><code>cd llvm/lib/Transforms    
 git clone https://github.com/BRICK-tool/BRICK-tool.git    
 cd BRICK-tool    
 ./Build_BRICK.sh    
-{% endhighlight %}</p>
+</code></pre>
 
 <p>The binary is in Directory Bin.<br>
 Our tool is now mainly based on LLVM3.5. If there is any preblem with other versions, please contact us.</p>
