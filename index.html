@@ -47,10 +47,8 @@
 <p>The output and statics of experiment:</p>
 
 <ul>
-<li>GSL<a href="https://github.com/BRICK-tool/Experiment/tree/master/GSL">GSL</a>
-</li>
-<li>NUMAL<a href="https://github.com/BRICK-tool/Experiment/tree/master/numal">NUMAL</a>
-</li>
+<li><a href="https://github.com/BRICK-tool/Experiment/tree/master/GSL">GSL</a></li>
+<li><a href="https://github.com/BRICK-tool/Experiment/tree/master/numal">NUMAL</a></li>
 </ul>
 
 <h1>
@@ -69,7 +67,7 @@
 <h3>
 <a id="install-g-49" class="anchor" href="#install-g-49" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install g++-4.9</h3>
 
-<p><code>
+<p>{% highlight bash %}
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y    
 sudo add-apt-repository ppa:dns/gnu -y     
 sudo update-alternatives --remove-all gcc    
@@ -78,7 +76,7 @@ sudo apt-get update
 sudo apt-get install -qq g++-4.9     
 sudo apt-get upgrade    
 sudo apt-get dist-upgrade -y    
-</code></p>
+{% endhighlight %}</p>
 
 <h3>
 <a id="download-llvm-and-clang" class="anchor" href="#download-llvm-and-clang" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download LLVM and Clang</h3>
@@ -86,23 +84,24 @@ sudo apt-get dist-upgrade -y
 <h3>
 <a id="build-and-install-llvm-and-clang" class="anchor" href="#build-and-install-llvm-and-clang" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build and Install LLVM and Clang</h3>
 
-<p><code>
+<p>{% highlight bash %}
 cd llvm    
 ./configuration     
 make     
 sudo make install    
-</code></p>
+{% endhighlight %}</p>
 
 <h3>
 <a id="download-and-build-brick" class="anchor" href="#download-and-build-brick" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download and build BRICK</h3>
 
-<p><code>
+<p>{% highlight bash %}
 cd llvm/lib/Transforms    
 git clone https://github.com/BRICK-tool/BRICK-tool.git    
 cd BRICK-tool    
 ./Build_BRICK.sh    
-</code> 
-The binary is in Directory Bin.<br>
+{% endhighlight %}</p>
+
+<p>The binary is in Directory Bin.<br>
 Our tool is now mainly based on LLVM3.5. If there is any preblem with other versions, please contact us.</p>
 
       <footer class="site-footer">
