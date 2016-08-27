@@ -85,6 +85,7 @@ sudo apt-get dist-upgrade -y
 <h3>
 <a id="download-llvm-and-clang" class="anchor" href="#download-llvm-and-clang" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download LLVM and Clang</h3>
 
+<pre><code></code></pre>
 <h3>
 <a id="build-and-install-llvm-and-clang" class="anchor" href="#build-and-install-llvm-and-clang" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build and Install LLVM and Clang</h3>
 
@@ -92,6 +93,38 @@ sudo apt-get dist-upgrade -y
 ./configuration     
 make     
 sudo make install    
+</code></pre>
+
+<h3>
+<a id="build-and-install-minisat" class="anchor" href="#build-and-install-minisat" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build and Install Minisat</h3>
+
+<pre><code>git clone https://github.com/niklasso/minisat.git
+cd minisat  
+make
+sudo make install     
+</code></pre>
+
+<h3>
+<a id="build-and-install-z3" class="anchor" href="#build-and-install-z3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build and Install Z3</h3>
+
+<pre><code>git clone https://github.com/Z3Prover/z3.git
+cd z3
+python scripts/mk_make.py
+cd build
+make
+sudo make install
+</code></pre>
+
+<h3>
+<a id="build-and-install-dreal" class="anchor" href="#build-and-install-dreal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build and Install dReal</h3>
+
+<pre><code>git clone https://github.com/dreal/dreal3.git dreal
+cd dreal
+mkdir -p build/release
+cd build/release
+cmake -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_CXX_COMPILER=g++-4.9 -DCMAKE_C_COMPILER=gcc-4.9 -DBUILD_SHARED_LIB=ON ../../src
+make
+sudo make install
 </code></pre>
 
 <h3>
