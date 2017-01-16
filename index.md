@@ -36,7 +36,7 @@ sudo apt-get upgrade
 sudo apt-get dist-upgrade -y    
 ```
 ### Download LLVM and Clang
-Go to the [release page](http://releases.llvm.org/) of llvm
+Go to the [release page](http://releases.llvm.org/) of llvm                
 Download LLVM-3.5.0
 ### Build and Install LLVM and Clang
 ```
