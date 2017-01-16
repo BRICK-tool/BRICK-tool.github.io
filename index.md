@@ -22,10 +22,6 @@ The output and statics of experiment:
 * [NUMAL](https://github.com/BRICK-tool/Experiment/tree/master/numal)
 
 # How to Build
-## Binary Release
-Please vist the [Binary at GitHub](https://github.com/BRICK-tool/BRICK_binary).
-Use `./Build_BRICK.sh` before using the binary.
-
 ## Source Code and Build Instructions
 You can download and build the source code of BRICK according to the following instructions:     
 ###Install g++-4.9
@@ -40,8 +36,8 @@ sudo apt-get upgrade
 sudo apt-get dist-upgrade -y    
 ```
 ### Download LLVM and Clang
-```
-```
+Go to the [release page](http://releases.llvm.org/) of llvm
+Download LLVM-3.5.0
 ### Build and Install LLVM and Clang
 ```
 cd llvm    
